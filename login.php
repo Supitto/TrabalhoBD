@@ -16,7 +16,6 @@ if (isset($_POST['CPF']) && isset($_POST['tipo']))
 else 
 {
     echo 'Voce deve fornecer um usuario ou senha.';
-    header('Location: index.html');
 
 }
 ?>
