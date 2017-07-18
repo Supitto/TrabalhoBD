@@ -6,7 +6,7 @@
  * 2 familiar
  * 3 paciente
  */
-if (isset($_POST['CPF']) && isset($_POST['tipo'])) 
+if (isset($_POST['CPF']))
 {
     //Checa conexao
     $connection = mysqli("localhost", "root", "reprovar", "prontuarioMedico");
