@@ -30,15 +30,19 @@ if (isset($_POST['CPF']) && isset($_POST['tipo']))
     if ($results->fetch_array()['CPF'] == $_POST['CPF']) 
     {
         setcookie("login",[$_POST['CPF'],$_POST['tipo']],time()+60*60*24*365, '/')
-        header('Location: menu.html');
+        header('Location: menu.php');
     }
     else
     {
         echo 'Usuario ou senha invalido.';
+        header('Location: index.html');
+
     }
 }
 else 
 {
     echo 'Voce deve fornecer um usuario ou senha.';
+    header('Location: index.html');
+
 }
 ?>
