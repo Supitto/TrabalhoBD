@@ -8,7 +8,9 @@
  */
 if (isset($_POST['CPF']))
 {
-    echo 'wow';
+    //Checa conexao
+    $connection = mysqli("localhost", "root", "reprovar", "prontuarioMedico");
+    $consulta = "";
     
 }
 else 
