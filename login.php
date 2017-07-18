@@ -21,7 +21,7 @@ if (isset($_POST['CPF']) && isset($_POST['tipo']))
         case "3":
             $consulta = "SELECT CPF FROM `dadosCuidadoresNProf` WHERE CPF = '".$_POST['CPF']."';";
             break;
-        case "3":
+        case "4":
             $consulta = "SELECT `CPFfamiliar` as CPF FROM `responsaveis` WHERE `CPFfamiliar` = '".$_POST['CPF']."';";
             break;
     }
